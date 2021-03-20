@@ -11,4 +11,3 @@ program
 // eslint-disable-next-line no-console
 
 program.parse(process.argv);
-
