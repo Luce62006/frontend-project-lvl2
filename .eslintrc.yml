@@ -1,4 +1,8 @@
 env:
+parserOptions:
+  ecmaVersion: 2020
+rules:
+  no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
   es2021: true
   node: true
 extends:
@@ -6,4 +10,6 @@ extends:
 parserOptions:
   ecmaVersion: 12
   sourceType: module
-rules: {}
+rules: 
+  no-console: 0
+  import/extensions: 0
