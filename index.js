@@ -1,6 +1,14 @@
 /* eslint-disable no-restricted-syntax */
 import _ from 'lodash';
+import fs from 'fs';
+import path from 'path';
 
+// получаем путь
+function getContent(fullPath) {
+  return fs.readFileSync(fullPath, 'utf8');
+}
+// преобразуем путь в обьект
+const data = JSON.parse(getContent);
 // передаем обьект в функцию
 function genDiff(data1, data2) {
   const keys1 = _.keys(data1);
