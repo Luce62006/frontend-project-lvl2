@@ -1,10 +1,13 @@
-
 import _ from 'lodash';
 import fs from 'fs';
 
-const getContent = (fullPath) => fs.readFileSync(fullPath, JSON.parse());
+// получаем путь
+const getContent = (fullPath) => fs.readFileSync(fullPath);
 
+// преобразуем путь в обьект
+const data = JSON.parse(getContent);
 
+// передаем обьект в функцию
 const genDiff = (data1, data2) => {
   const keys1 = _.keys(data1);
   const keys2 = _.keys(data2);
