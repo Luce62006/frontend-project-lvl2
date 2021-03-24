@@ -8,11 +8,12 @@ const program = new commander.Command();
 program
   .version('0.1.0')
   .description('Compares two configuration files and shows a difference.')
-  .arguments('<pathToFile1> <pathToFile2>')
-  .option('-f, --format [type]', 'output format', 'stylish')
+  .arguments('<filepath1> <filepath2>')
+  .option('-f, --format [type]', 'output format')
+  .helpOption('-h, --help', 'output usage information')
   .action(
-    (pathToFile1, pathToFile2) => {
-      console.log(genDiff(pathToFile1, pathToFile2, program.format));
+    (filepath1, filepath2) => {
+      console.log(genDiff(filepath1, filepath2, program.format));
     },
   )
   .parse(process.argv);

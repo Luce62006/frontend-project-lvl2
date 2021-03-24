@@ -1,34 +1,37 @@
 /* eslint-disable no-restricted-syntax */
-import _ from 'lodash';
+
 import fs from 'fs';
 import path from 'path';
+import parser from './parser.js';
+import format from './formatters.js';
+import genDiff from './genDiff.js';
 
-// получаем путь
-function getContent(fullPath) {
-  return fs.readFileSync(fullPath, 'utf8');
-}
-// преобразуем путь в обьект
-const data = JSON.parse(getContent);
-// передаем обьект в функцию
-function genDiff(data1, data2) {
-  const keys1 = _.keys(data1);
-  const keys2 = _.keys(data2);
-  const unionKeys = _.union(keys1, keys2);
-  const sortedKeys = unionKeys.sort();
-  const result = [];
-  for (const key of sortedKeys) {
-    if (!_.has(data1, key)) {
-      result.push([`+ ${key}: ${data2[key]}`]);
-    } else if (!_.has(data2, key)) {
-      result.push([`- ${key}: ${data1[key]}`]);
-    } else if (data1[key] !== data2[key]) {
-      result.push([`- ${key}: ${data1[key]}`]);
-      result.push([`+ ${key}: ${data2[key]}`]);
-    } else {
-      result.push([`  ${key}: ${data1[key]}`]);
-    }
-  }
-  return result.join('\n');
-}
 
-export default genDiff;
+// получаем абсолютный путь
+export default(filepath1, filepath2, formatName = 'stylish') => {
+  const absolutePath1 = path.resolve(process.cwd(), filepath1);
+  const absolutePath2 = path.resolve(process.cwd(), filepath2);
+  console.log(absolutePath1);
+
+// Выясняем формат файлов
+const dataFormat1 = path.extname(absolutePath1).slice(1);
+const dataFormat2 = path.extname(absolutePath2).slice(1);
+console.log(dataFormat1);
+
+// Читаем файлы
+const data1 = fs.readFileSync(absolutePath1);
+const data2 = fs.readFileSync(absolutePath2);
+console.log(data1);
+
+// Парсим файлы в JS-объекты
+const obj1 = parser(data1, dataFormat1);
+const obj2 = parser(data2, dataFormat2);
+console.log(obj1);
+
+// Формируем diff-файл
+const diff = genDiff(obj1, obj2);
+
+// Выбираем и запускаем форматер
+  return format(diff, formatName);
+};
+
