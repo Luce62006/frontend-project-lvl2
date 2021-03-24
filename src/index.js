@@ -1,10 +1,8 @@
-/* eslint-disable no-restricted-syntax */
-
 import fs from 'fs';
 import path from 'path';
 import parser from './parser.js';
-import format from './formatters.js';
-import genDiff from './genDiff.js';
+import format from './src/formatters/index.js';
+import genDiff from './genDiff';
 
 
 // получаем абсолютный путь
