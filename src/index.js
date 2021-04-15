@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import parser from './parser.js';
-import format from './src/formatters/index.js';
-import genDiff from './genDiff';
+import format from '../src/formatters/index.js';
+import genDiff from './gendiff';
 
 
 // получаем абсолютный путь
-export default(filepath1, filepath2, formatName = 'stylish') => {
+export default (filepath1, filepath2, formatName = 'stylish') => {
   const absolutePath1 = path.resolve(process.cwd(), filepath1);
   const absolutePath2 = path.resolve(process.cwd(), filepath2);
   console.log(absolutePath1);

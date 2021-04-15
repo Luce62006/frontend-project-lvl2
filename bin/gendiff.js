@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import commander from 'commander';
-import genDiff from '../index.js';
+import genDiff from '../src/gendiff';
 
 const program = new commander.Command();
 
