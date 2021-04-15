@@ -1,5 +1,18 @@
 import _ from 'lodash';
 
+const data1 = {
+  host: 'hexlet.io',
+  timeout: 50,
+  proxy: '123.234.53.22',
+  follow: false,
+};
+
+const data2 = {
+  timeout: 20,
+  verbose: true,
+  host: 'hexlet.io',
+};
+
 const genDiff = (data1, data2) => {
   const keys1 = _.keys(data1);
   const keys2 = _.keys(data2);
@@ -8,8 +21,7 @@ const genDiff = (data1, data2) => {
   const result = [];
   for (const key of sortedKeys) {
     if (!_.has(data1, key)) {
-      result.push([`+ ${key}: ${data2[key]}`])
-
+      result.push([`+ ${key}: ${data2[key]}`]);
     } else if (!_.has(data2, key)) {
       result.push([`- ${key}: ${data1[key]}`]);
     } else if (data1[key] !== data2[key]) {
@@ -21,5 +33,7 @@ const genDiff = (data1, data2) => {
   }
   return result.join('\n');
 };
+
+console.log(genDiff(data1, data2));
 
 export default genDiff;
