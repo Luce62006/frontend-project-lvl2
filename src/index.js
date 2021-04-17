@@ -1,11 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 import parser from './parser.js';
-import format from './formatters/index.js';
-import genDiff from './gendiff';
+import makeObjectsDiff from './makeObjectsDiff.js';
 
 // получаем абсолютный путь
-export default (filepath1, filepath2, formatName = 'stylish') => {
+const genDiff = (filepath1, filepath2) => {
   const absolutePath1 = path.resolve(process.cwd(), filepath1);
   const absolutePath2 = path.resolve(process.cwd(), filepath2);
   console.log(absolutePath1);
@@ -26,8 +25,9 @@ export default (filepath1, filepath2, formatName = 'stylish') => {
   console.log(obj1);
 
   // Формируем diff-файл
-  const diff = genDiff(obj1, obj2);
+  const diff = makeObjectsDiff(obj1, obj2);
 
   // Выбираем и запускаем форматер
-  return format(diff, formatName);
+  return diff;
 };
+export default genDiff;

@@ -1,19 +1,6 @@
 import _ from 'lodash';
 
-const data1 = {
-  host: 'hexlet.io',
-  timeout: 50,
-  proxy: '123.234.53.22',
-  follow: false,
-};
-
-const data2 = {
-  timeout: 20,
-  verbose: true,
-  host: 'hexlet.io',
-};
-
-const genDiff = (data1, data2) => {
+const makeObjectsDiff = (data1, data2) => {
   const keys1 = _.keys(data1);
   const keys2 = _.keys(data2);
   const unionKeys = _.union(keys1, keys2);
@@ -33,7 +20,4 @@ const genDiff = (data1, data2) => {
   }
   return result.join('\n');
 };
-
-console.log(genDiff(data1, data2));
-
-export default genDiff;
+export default makeObjectsDiff;
