@@ -22,5 +22,5 @@ test.each([
 
 ])('genDiff', (filepath1, filepath2, formatName, resultFile) => {
   expect(genDiff(filepath1, filepath2, formatName))
-    .toEqual(resultFile);
+    .toBe(resultFile);
 });
