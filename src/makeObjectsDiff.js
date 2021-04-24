@@ -1,23 +1,35 @@
 import _ from 'lodash';
 
-const makeObjectsDiff = (data1, data2) => {
-  const keys1 = _.keys(data1);
-  const keys2 = _.keys(data2);
-  const unionKeys = _.union(keys1, keys2);
-  const sortedKeys = unionKeys.sort();
-  const result = [];
-  for (const key of sortedKeys) {
-    if (!_.has(data1, key)) {
-      result.push([`+ ${key}: ${data2[key]}`]);
-    } else if (!_.has(data2, key)) {
-      result.push([`- ${key}: ${data1[key]}`]);
-    } else if (data1[key] !== data2[key]) {
-      result.push([`- ${key}: ${data1[key]}`]);
-      result.push([`+ ${key}: ${data2[key]}`]);
-    } else {
-      result.push([`  ${key}: ${data1[key]}`]);
+// Функция высчитывает разницу между двумя объектами
+const makeObjectsDiff = (obj1, obj2) => {
+  const keys1 = Object.keys(obj1);
+  const keys2 = Object.keys(obj2);
+  const result = _.sortBy(_.union(keys1, keys2)).map((key) => {
+    if (!_.has(obj1, key)) {
+      return {
+        name: key, type: 'ADDED', value: obj2[key],
+      };
     }
-  }
-  return result.join('\n');
+    if (!_.has(obj2, key)) {
+      return {
+        name: key, type: 'REMOVED', value: obj1[key],
+      };
+    }
+    if (_.isPlainObject(obj1[key]) && _.isPlainObject(obj2[key])) {
+      return {
+        name: key, type: 'PARENT', children: makeObjectsDiff(obj1[key], obj2[key]),
+      };
+    }
+    if (obj1[key] !== obj2[key]) {
+      return {
+        name: key, type: 'CHANGED', oldValue: obj1[key], newValue: obj2[key],
+      };
+    }
+    return {
+      name: key, type: 'UNCHANGED', value: obj1[key],
+    };
+  });
+  return result;
 };
+
 export default makeObjectsDiff;
