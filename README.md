@@ -10,12 +10,16 @@
 
 Difference calculator.
 
-This program calculates the difference between two json or yaml(yml) structures and outputs the report to the console. Write in your console getdiff + 2 paths to files you want to compare. You can optionally choose one of three formatters: stylish(used by default), plain or json.
+This program calculates the difference between two json or yaml structures and outputs the report to the console. Write in your console getdiff + 2 paths to files you want to compare. You can optionally choose one of three formatters: stylish(used by default), plain or json.
 
 
 gendiff -h:
 
    https://asciinema.org/a/YvlssIxKwOy8G1aa2a7AsvnlI
+   
+ yaml file:  
+ https://asciinema.org/a/ED9SUMolZEKK6XuYImqmKZa38
+
 
 stylish format:
 
