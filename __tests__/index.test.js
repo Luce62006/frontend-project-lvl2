@@ -12,16 +12,28 @@ const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8'
 
 const resultStylish = readFile('result-stylish.txt');
 const resultPlain = readFile('result-plain.txt');
+const resultJson = readFile('result-plain.txt');
 
 test.each([
   // JSON
   ['__fixtures__/file1.json', '__fixtures__/file2.json', 'stylish', resultStylish],
   ['__fixtures__/file1.json', '__fixtures__/file2.json', 'plain', resultPlain],
+  
+  // YAML and YML
+  ['__fixtures__/1.yaml', '__fixtures__/2.yml', 'stylish', resultStylish],
+  ['__fixtures__/1.yaml', '__fixtures__/2.yml', 'plain', resultPlain],
+  ['__fixtures__/1.yaml', '__fixtures__/2.yml', 'json', resultJson],
 
-])('genDiff plain and stylish', (filepath1, filepath2, formatName, resultFile) => {
+  // CROSSED
+  ['__fixtures__/1.json', '__fixtures__/2.yml', 'stylish',resultStylish],
+  ['__fixtures__/1.yaml', '__fixtures__/2.json', 'plain', resultPlain],
+  ['__fixtures__/1.json', '__fixtures__/2.yml', 'json', resultJson],
+
+
+('genDiff plain and stylish', (filepath1, filepath2, formatName, resultFile) => {
   expect(genDiff(filepath1, filepath2, formatName))
     .toEqual(resultFile);
-});
+}),
 
 test('genDiff JSON', () => {
   const result = genDiff('__fixtures__/file1.json', '__fixtures__/file2.json', 'json');
