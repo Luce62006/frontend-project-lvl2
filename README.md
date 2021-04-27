@@ -14,9 +14,9 @@ stylish format:
 
 plain format:
 
-    https://asciinema.org/a/l0ul3T1V8lVRGQuibkPXNp1gO
+  https://asciinema.org/a/l0ul3T1V8lVRGQuibkPXNp1gO
     
 json format: 
 
-    https://asciinema.org/a/pH621Jij9p1Hn8nzThsHbbk3h
+  https://asciinema.org/a/pH621Jij9p1Hn8nzThsHbbk3h
 
