@@ -7,3 +7,13 @@
 [![linter](https://github.com/Luce62006/frontend-project-lvl2/workflows/linter-and-tests/badge.svg)](https://github.com/Luce62006/frontend-project-lvl2/actions)
 
 <a href="https://codeclimate.com/github/Luce62006/frontend-project-lvl2/test_coverage"><img src="https://api.codeclimate.com/v1/badges/d5d27a095163fd508de1/test_coverage" /></a>
+
+stylish format:
+ https://asciinema.org/a/WMlBjLSkLv2ceAiZM3KEvSSzx
+
+plain format:
+    https://asciinema.org/a/l0ul3T1V8lVRGQuibkPXNp1gO
+    
+json format:    
+    https://asciinema.org/a/pH621Jij9p1Hn8nzThsHbbk3h
+
