@@ -8,6 +8,11 @@
 
 <a href="https://codeclimate.com/github/Luce62006/frontend-project-lvl2/test_coverage"><img src="https://api.codeclimate.com/v1/badges/d5d27a095163fd508de1/test_coverage" /></a>
 
+Difference calculator.
+
+This program calculates the difference between two json or yaml(yml) structures and outputs the report to the console. Write in your console getdiff + 2 paths to files you want to compare. You can optionally choose one of three formatters: stylish(used by default), plain or json.
+
+
 gendiff -h:
 
    https://asciinema.org/a/YvlssIxKwOy8G1aa2a7AsvnlI
