@@ -8,6 +8,10 @@
 
 <a href="https://codeclimate.com/github/Luce62006/frontend-project-lvl2/test_coverage"><img src="https://api.codeclimate.com/v1/badges/d5d27a095163fd508de1/test_coverage" /></a>
 
+gendiff -h:
+
+   https://asciinema.org/a/YvlssIxKwOy8G1aa2a7AsvnlI
+
 stylish format:
 
   https://asciinema.org/a/Jm1rjjVJIWEyEovfavZeJRbQF
