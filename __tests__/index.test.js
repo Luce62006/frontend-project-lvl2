@@ -29,7 +29,8 @@ test.each([
   ['__fixtures__/1.yaml', '__fixtures__/2.json', 'plain', resultPlain],
   ['__fixtures__/1.json', '__fixtures__/2.yml', 'json', resultJson],
 ]);
-test('genDiff plain and stylish', (filepath1, filepath2, formatName, resultFile) => {
+
+test('genDiff stylish and plain', (filepath1, filepath2, formatName, resultFile) => {
   expect(genDiff(filepath1, filepath2, formatName))
     .toEqual(resultFile);
 });
