@@ -18,26 +18,23 @@ const valueFormatter = (value, depth) => {
 const stylish = (data) => {
   const innerFormatter = (innerData, depth = 0) => {
     const formattedData = innerData.map((node) => {
-      if (node.type === 'ADDED') {
-        return `${depthIndent(depth)}${plusGap}${node.name}: ${valueFormatter(node.value, depth)}`;
+      switch (node.type) {
+        case 'ADDED':
+          return `${depthIndent(depth)}${plusGap}${node.name}: ${valueFormatter(node.value, depth)}`;
+        case 'REMOVED':
+          return `${depthIndent(depth)}${minusGap}${node.name}: ${valueFormatter(node.value, depth)}`;
+        case 'UNCHANGED':
+          return `${depthIndent(depth)}${neutralGap}${node.name}: ${valueFormatter(node.value, depth)}`;
+        case 'CHANGED':
+          return `${depthIndent(depth)}${minusGap}${node.name}: ${valueFormatter(node.oldValue, depth)}\n${depthIndent(depth)}${plusGap}${node.name}: ${valueFormatter(node.newValue, depth)}`;
+        case 'PARENT':
+          return `${depthIndent(depth)}${neutralGap}${node.name}: ${innerFormatter(node.children, depth + 1)}`;
+        default:
+          throw new Error(`"${node.type}" type is not supported by the formatter`);
       }
-      if (node.type === 'REMOVED') {
-        return `${depthIndent(depth)}${minusGap}${node.name}: ${valueFormatter(node.value, depth)}`;
-      }
-      if (node.type === 'UNCHANGED') {
-        return `${depthIndent(depth)}${neutralGap}${node.name}: ${valueFormatter(node.value, depth)}`;
-      }
-      if (node.type === 'CHANGED') {
-        return `${depthIndent(depth)}${minusGap}${node.name}: ${valueFormatter(node.oldValue, depth)}\n${depthIndent(depth)}${plusGap}${node.name}: ${valueFormatter(node.newValue, depth)}`;
-      }
-      if (node.type === 'PARENT') {
-        return `${depthIndent(depth)}${neutralGap}${node.name}: ${innerFormatter(node.children, depth + 1)}`;
-      }
-      throw new Error(`"${node.type}" type is not supported by the formatter`);
     });
     return `{\n${formattedData.join('\n')}\n${depthIndent(depth)}}`;
   };
-
   return innerFormatter(data);
 };
 

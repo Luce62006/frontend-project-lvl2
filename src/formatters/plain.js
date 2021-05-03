@@ -2,34 +2,31 @@ import _ from 'lodash';
 
 // Вспомогательная функция для обработки значений
 const valueFormatter = (value) => {
-  if (!_.isObject(value)) {
-    return _.isString(value) ? `'${value}'` : `${value}`;
+  if (_.isObject(value)) {
+    return '[complex value]';
   }
-  return '[complex value]';
+  return _.isString(value) ? `'${value}'` : `${value}`;
 };
 
-// Функция формирует plain-вывод в консоль на основе результата из getDiff
 const formatter = (data) => {
   const innerFormatter = (innerData, path = []) => {
     const formattedData = innerData.map((node) => {
       const pathElements = [...path, node.name];
       const actualPath = pathElements.join('.');
-      if (node.type === 'ADDED') {
-        return `Property '${actualPath}' was added with value: ${valueFormatter(node.value)}`;
+      switch (node.type) {
+        case 'ADDED':
+          return `Property '${actualPath}' was added with value: ${valueFormatter(node.value)}`;
+        case 'REMOVED':
+          return `Property '${actualPath}' was removed`;
+        case 'CHANGED':
+          return `Property '${actualPath}' was updated. From ${valueFormatter(node.oldValue)} to ${valueFormatter(node.newValue)}`;
+        case 'PARENT':
+          return `${innerFormatter(node.children, pathElements)}`;
+        case 'UNCHANGED':
+          return null;
+        default:
+          throw new Error(`"${node.type}" type is not supported by the formatter`);
       }
-      if (node.type === 'REMOVED') {
-        return `Property '${actualPath}' was removed`;
-      }
-      if (node.type === 'CHANGED') {
-        return `Property '${actualPath}' was updated. From ${valueFormatter(node.oldValue)} to ${valueFormatter(node.newValue)}`;
-      }
-      if (node.type === 'PARENT') {
-        return `${innerFormatter(node.children, pathElements)}`;
-      }
-      if (node.type === 'UNCHANGED') {
-        return null;
-      }
-      throw new Error(`"${node.type}" type is not supported by the formatter`);
     })
       .filter((elem) => elem !== null);
 
