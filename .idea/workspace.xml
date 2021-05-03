@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25355e05-7ba6-41e5-8b8d-f40ed100df17" name="Default Changelist" comment="' stylish, plain'">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frontend-project-lvl2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/frontend-project-lvl2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/jsLinters/eslint.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__fixtures__/file2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/__fixtures__/file2.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/__tests__/index.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints>
+      <file url="file://$PROJECT_DIR$/__tests__/index.test.js" />
+    </disable_hints>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
+  <component name="ProjectId" id="1r85eztRbOL5A9PTleQr7hqyAFc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.5" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.37" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/__fixtures__" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/__fixtures__" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/formatters" />
+      <recent name="$PROJECT_DIR$/__fixtures__" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.genDiff">
+    <configuration name="genDiff" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/index.test.js" />
+      <test-names>
+        <test-name value="genDiff" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="index.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/__tests__/index.test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gendiff.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bin/gendiff.js" working-dir="$PROJECT_DIR$/bin">
+      <method v="2" />
+    </configuration>
+    <configuration name="makeObjectsDiff.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/makeObjectsDiff.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.genDiff" />
+        <item itemvalue="Node.js.makeObjectsDiff.js" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="Jest.index.test.js" />
+        <item itemvalue="Node.js.makeObjectsDiff.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25355e05-7ba6-41e5-8b8d-f40ed100df17" name="Default Changelist" comment="" />
+      <created>1618344977237</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618344977237</updated>
+      <workItem from="1618344982882" duration="4977000" />
+      <workItem from="1618394082020" duration="2421000" />
+      <workItem from="1618400876548" duration="140000" />
+      <workItem from="1618437321982" duration="20489000" />
+      <workItem from="1618677240145" duration="846000" />
+      <workItem from="1618678200098" duration="24890000" />
+      <workItem from="1618921191946" duration="7634000" />
+      <workItem from="1618937460813" duration="4887000" />
+      <workItem from="1619301783970" duration="1931000" />
+      <workItem from="1619367498277" duration="169000" />
+      <workItem from="1619441302009" duration="4909000" />
+      <workItem from="1619446537450" duration="45000" />
+      <workItem from="1619446623509" duration="119000" />
+      <workItem from="1619456290076" duration="2054000" />
+      <workItem from="1619536151943" duration="4066000" />
+      <workItem from="1619543158975" duration="4160000" />
+      <workItem from="1619554912873" duration="1207000" />
+      <workItem from="1619606617170" duration="390000" />
+      <workItem from="1619698898817" duration="64000" />
+      <workItem from="1619707024627" duration="2237000" />
+      <workItem from="1619710997686" duration="494000" />
+      <workItem from="1619712275849" duration="6331000" />
+      <workItem from="1619896953328" duration="955000" />
+      <workItem from="1619898949871" duration="2063000" />
+      <workItem from="1619973889587" duration="213000" />
+      <workItem from="1619974174821" duration="744000" />
+      <workItem from="1619976496455" duration="6248000" />
+      <workItem from="1620033389282" duration="7499000" />
+    </task>
+    <task id="LOCAL-00001" summary="'gendiff'">
+      <created>1618496168529</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618496168529</updated>
+    </task>
+    <task id="LOCAL-00002" summary="'gendiff'">
+      <created>1618496188548</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618496188548</updated>
+    </task>
+    <task id="LOCAL-00003" summary="'gendiff'">
+      <created>1618502372306</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618502372306</updated>
+    </task>
+    <task id="LOCAL-00004" summary="'gendiff'">
+      <created>1618682367328</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618682367328</updated>
+    </task>
+    <task id="LOCAL-00005" summary="'tests'">
+      <created>1619271651367</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619271651367</updated>
+    </task>
+    <task id="LOCAL-00006" summary="'tests'">
+      <created>1619303256236</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619303256237</updated>
+    </task>
+    <task id="LOCAL-00007" summary="'tests'">
+      <created>1619306526427</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1619306526427</updated>
+    </task>
+    <task id="LOCAL-00008" summary="'index.js'">
+      <created>1619442437458</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1619442437458</updated>
+    </task>
+    <task id="LOCAL-00009" summary="'index.js'">
+      <created>1619461105979</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1619461105980</updated>
+    </task>
+    <task id="LOCAL-00010" summary="'parser'">
+      <created>1619553737139</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1619553737139</updated>
+    </task>
+    <task id="LOCAL-00011" summary="'parser'">
+      <created>1619555991577</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1619555991577</updated>
+    </task>
+    <task id="LOCAL-00012" summary="'test'">
+      <created>1619718045807</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1619718045807</updated>
+    </task>
+    <task id="LOCAL-00013" summary="' .idea'">
+      <created>1619720977171</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1619720977171</updated>
+    </task>
+    <task id="LOCAL-00014" summary="' stylish, plain'">
+      <created>1620041081995</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620041081995</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="'gendiff'" />
+    <MESSAGE value="'tests'" />
+    <MESSAGE value="'index.js'" />
+    <MESSAGE value="'parser'" />
+    <MESSAGE value="'test'" />
+    <MESSAGE value="' .idea'" />
+    <MESSAGE value="' stylish, plain'" />
+    <option name="LAST_COMMIT_MESSAGE" value="' stylish, plain'" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/frontend_project_lvl2$Rerun_Failed_Tests.info" NAME="Rerun Failed Tests Coverage Results" MODIFIED="1618852777970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/frontend_project_lvl2$genDiff.info" NAME="genDiff Coverage Results" MODIFIED="1618852759080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

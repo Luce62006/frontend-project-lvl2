@@ -20,7 +20,7 @@ const makeObjectsDiff = (obj1, obj2) => {
         name: key, type: 'PARENT', children: makeObjectsDiff(obj1[key], obj2[key]),
       };
     }
-    if (obj1[key] !== obj2[key]) {
+    if (!_.isEqual(obj1[key], obj2[key])) {
       return {
         name: key, type: 'CHANGED', oldValue: obj1[key], newValue: obj2[key],
       };

@@ -13,7 +13,6 @@ const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8'
 const resultStylish = readFile('result-stylish.txt');
 const resultPlain = readFile('result-plain.txt');
 
-
 test('genDiff stylish', () => {
   expect(genDiff('__fixtures__/file1.json', '__fixtures__/file2.json', 'stylish'))
     .toEqual(resultStylish);
