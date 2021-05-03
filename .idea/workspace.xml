@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25355e05-7ba6-41e5-8b8d-f40ed100df17" name="Default Changelist" comment="' .idea'">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__fixtures__/result-json.txt" beforeDir="false" />
+    <list default="true" id="25355e05-7ba6-41e5-8b8d-f40ed100df17" name="Default Changelist" comment="' stylish, plain'">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frontend-project-lvl2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/frontend-project-lvl2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/jsLinters/eslint.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__fixtures__/file2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/__fixtures__/file2.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/__tests__/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/__tests__/index.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formatters/plain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/formatters/plain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formatters/stylish.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/formatters/stylish.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +155,7 @@
       <workItem from="1619973889587" duration="213000" />
       <workItem from="1619974174821" duration="744000" />
       <workItem from="1619976496455" duration="6248000" />
-      <workItem from="1620033389282" duration="5145000" />
+      <workItem from="1620033389282" duration="5954000" />
     </task>
     <task id="LOCAL-00001" summary="'gendiff'">
       <created>1618496168529</created>
@@ -238,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619720977171</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="' stylish, plain'">
+      <created>1620041081995</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620041081995</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +291,8 @@
     <MESSAGE value="'parser'" />
     <MESSAGE value="'test'" />
     <MESSAGE value="' .idea'" />
-    <option name="LAST_COMMIT_MESSAGE" value="' .idea'" />
+    <MESSAGE value="' stylish, plain'" />
+    <option name="LAST_COMMIT_MESSAGE" value="' stylish, plain'" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
