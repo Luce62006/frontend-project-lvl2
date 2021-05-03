@@ -20,7 +20,7 @@ Clone this repository on your machine and write sudo npm link in the project dir
 
    https://asciinema.org/a/YvlssIxKwOy8G1aa2a7AsvnlI
    
-### Comparing yaml files and making output in plain format: 
+### Comparing yaml files and making output in stylish format: 
  
  https://asciinema.org/a/ED9SUMolZEKK6XuYImqmKZa38
 
