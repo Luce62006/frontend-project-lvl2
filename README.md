@@ -14,7 +14,7 @@ This program calculates the difference between two json or yaml structures and o
 
 ### Installation:
 Clone this repository on your machine and write ```sudo npm link``` in the project directory.
-To compare the two files, enter the command ```gendiff pathefile1 pathfile2``` in the terminal.
+To compare the two files, enter the command ```gendiff pathfile1 pathfile2``` in the terminal.
 
 ### Output help information(gendiff -h):
 
