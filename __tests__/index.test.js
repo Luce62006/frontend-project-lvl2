@@ -19,7 +19,7 @@ test('genDiff stylish', () => {
 });
 
 test('genDiff plain', () => {
-  expect(genDiff('__fixtures__/file1.json', '__fixtures__/file2.json', 'plain'))
+  expect(genDiff('__fixtures__/file1.json', '__fixtures__/file2.yml', 'plain'))
     .toEqual(resultPlain);
 });
 
