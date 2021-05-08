@@ -2,11 +2,13 @@
 
 [![Actions Status](https://github.com/Luce62006/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/Luce62006/frontend-project-lvl2/actions)
 
-<a href="https://codeclimate.com/github/Luce62006/frontend-project-lvl2/maintainability"><img src="https://api.codeclimate.com/v1/badges/d5d27a095163fd508de1/maintainability" /></a>
+<a href="https://codeclimate.com/github/Luce62006/frontend-project-lvl2/maintainability"><img src="https://api.codeclimate.com/v1/badges/8203686839b9882184da/maintainability" /></a>
+
 
 [![linter](https://github.com/Luce62006/frontend-project-lvl2/workflows/linter-and-tests/badge.svg)](https://github.com/Luce62006/frontend-project-lvl2/actions)
 
-<a href="https://codeclimate.com/github/Luce62006/frontend-project-lvl2/test_coverage"><img src="https://api.codeclimate.com/v1/badges/d5d27a095163fd508de1/test_coverage" /></a>
+<a href="https://codeclimate.com/github/Luce62006/frontend-project-lvl2/test_coverage"><img src="https://api.codeclimate.com/v1/badges/8203686839b9882184da/test_coverage" /></a>
+
 
 ### Difference calculator.
 
